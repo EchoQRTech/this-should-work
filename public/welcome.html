@@ -190,7 +190,7 @@
           checkout = await postJSON('/api/create-checkout', { email: user.email, supabase_user_id: user.id });
         } catch(e) {
           // fallback Lemon Squeezy URL for testing
-          checkout = { url: 'https://checkout.lemonsqueezy.com/checkout/buy/your-test-checkout-id' };
+          checkout = { url: 'https://treasurettovaultt.lemonsqueezy.com/buy/5c045cdc-5948-4e7f-b706-612093e33d30' };
         }
 
         if (!checkout?.url) throw new Error('Checkout URL missing.');
